@@ -64,4 +64,4 @@ echo "Removing downloaded files"
 rm latest.zip
 rm -rf latest
 
-echo "Shorty update complete"
+echo "$SERVICE_NAME update complete"
