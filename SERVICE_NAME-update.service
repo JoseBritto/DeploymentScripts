@@ -1,0 +1,12 @@
+[Unit]
+Description=SERVICE_NAME Update checker
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=PATH
+WorkingDirectory=DIRECTORY
+Type=oneshot
+
+[Install]
+WantedBy=default.target

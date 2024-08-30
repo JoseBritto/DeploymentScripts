@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for SERVICE_NAME Updates every 30 minutes
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=30min
+Unit=SERVICE_UPDATER_NAME.service
+
+[Install]
+WantedBy=timers.target
