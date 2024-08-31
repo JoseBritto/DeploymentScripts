@@ -1,0 +1,13 @@
+[Unit]
+Description=DESCRIPTION
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=on-failure
+ExecStart=PATH
+WorkingDirectory=FOLDER
+Type=simple
+
+[Install]
+WantedBy=default.target
