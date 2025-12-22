@@ -24,6 +24,7 @@ else
   git -C "$REPO_DIR" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
   git -C "$REPO_DIR" checkout -q "$BRANCH" 2>/dev/null || git -C "$REPO_DIR" checkout -q -B "$BRANCH"
   # Pull latest from origin/BRANCH and overwrite any local changes
+  git -C "$REPO_DIR" fetch
   git -C "$REPO_DIR" reset  --hard "origin/$BRANCH"
 fi
 
